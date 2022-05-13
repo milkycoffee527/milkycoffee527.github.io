@@ -2,12 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://milkycoffee527.github.io</id>
     <title>Ultramarine &apos;s Blog</title>
-    <updated>2022-05-13T06:05:30.877Z</updated>
+    <updated>2022-05-13T06:09:02.428Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://milkycoffee527.github.io"/>
     <link rel="self" href="https://milkycoffee527.github.io/atom.xml"/>
-    <subtitle>一只可爱喵的博客qwq
-你可以在&lt;a herf=&quot;https://www.luogu.com.cn/user/317198&quot;&gt;洛谷&lt;/a&gt;、&lt;a herf=&quot;https://space.bilibili.com/525632017&quot;&gt;B站&lt;/a&gt;、&lt;a herf=&quot;https://www.zhihu.com/people/niu-nai-xiao-ka-pei-12&quot;&gt;知乎&lt;/a&gt;找到并联系我⭐</subtitle>
+    <subtitle>一只可爱喵的博客qwq</subtitle>
     <logo>https://milkycoffee527.github.io/images/avatar.png</logo>
     <icon>https://milkycoffee527.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Ultramarine &apos;s Blog</rights>
