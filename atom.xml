@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://milkycoffee527.github.io</id>
     <title>Ultramarine &apos;s Blog</title>
-    <updated>2022-05-13T06:20:40.281Z</updated>
+    <updated>2022-05-13T06:35:08.533Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://milkycoffee527.github.io"/>
     <link rel="self" href="https://milkycoffee527.github.io/atom.xml"/>
@@ -10,4 +10,43 @@
     <logo>https://milkycoffee527.github.io/images/avatar.png</logo>
     <icon>https://milkycoffee527.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Ultramarine &apos;s Blog</rights>
+    <entry>
+        <title type="html"><![CDATA[空耳大师——使用库乐队模拟人声的简易方法]]></title>
+        <id>https://milkycoffee527.github.io/post/music-to-midi/</id>
+        <link href="https://milkycoffee527.github.io/post/music-to-midi/">
+        </link>
+        <updated>2022-05-13T06:28:37.000Z</updated>
+        <content type="html"><![CDATA[<p>效果：<a href="https://www.bilibili.com/video/BV1dq4y1H7RF">看这里</a></p>
+<p>首先你需要将<code>人声.mp3</code>转化为<code>人声.mid</code>，在网上搜索 mp3 转 midi 工具就可以了。</p>
+<p>然后把 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>d</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">midi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span></span></span></span> 文件拖入库乐队，自定义的乐器是正弦合成器，把乐器换为钢琴，在下方的操作栏中切出谱子的页面，导出就可以了。</p>
+<p>当然如果你不会乐器，直接用库乐队钢琴导出也是可以的。</p>
+<p>也可以用这种方法扒谱。</p>
+<p>这个方法的原因是，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>d</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">midi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span></span></span></span> 文件自带文件中所有出现的频率及频率响度，将 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>i</mi><mi>d</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">midi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">i</span><span class="mord mathdefault">d</span><span class="mord mathdefault">i</span></span></span></span> 文件拖入库乐队时库乐队会将频率和响度转换为音符和响度。</p>
+<p>而你能听出这说的是什么的原因在于，钢琴的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>88</mn></mrow><annotation encoding="application/x-tex">88</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">8</span><span class="mord">8</span></span></span></span> 个频率通过全损音质还原了原声（固定频率太少），这和卷积的原理差不多，而人具有鸡尾酒效应，大脑会自动捕捉声音的焦点，加上你听过原音频，这样就能听到原声了，因为大脑忽略了不在范围内的泛音。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[mac/win 电脑如何快速进入 github？]]></title>
+        <id>https://milkycoffee527.github.io/post/faster-github-2021/</id>
+        <link href="https://milkycoffee527.github.io/post/faster-github-2021/">
+        </link>
+        <updated>2021-06-26T06:23:16.000Z</updated>
+        <content type="html"><![CDATA[<p>注：本文章随github污染问题效果下降。<br>
+视频版：<a href="https://www.bilibili.com/video/BV1Fh411a7p4">Here</a> qwq</p>
+<p>首先需要访问两个网页，分别是 <a href="https://github.com.ipaddress.com/">这个</a> 和 <a href="https://fastly.net.ipaddress.com/github.global.ssl.fastly.net">这个</a>。</p>
+<p>在两个网站中，很显眼的表格上有一项是 <code>IP Adddress</code> ，把这两个网页显示的 ip 地址存储下来。</p>
+<p>在最上方的桌面栏里找到『前往』，拖到最下方的『前往文件夹』，输入<code>/private/etc</code>。</p>
+<p>在 <code>etc</code> 文件下方找到 <code>hosts</code> 文件，添加如下两行：</p>
+<pre><code>xxx.xxx.xxx.xxx github.com
+xxx.xxx.xxx.xxx github.global.ssl.fastly.net
+</code></pre>
+<p>第一行输入的是在第一个网页显示的 ip 地址，第二行输入的是在第二个网页显示的 ip 地址。</p>
+<p>保存并替换 <code>hosts</code> 文件（注意删除 <code>.txt</code>）。</p>
+<p>然后打开终端更新 DNS 缓存，输入 <code>sudo killall -HUP mDNSResponder</code>。</p>
+<p>打开 github 官网你就会发现访问速度变快了。</p>
+<hr>
+<p>win 的 etc 文件在 C:\Windows\System32\drivers\etc</p>
+<p>win 的更新指令是 ipconfig /flushdns</p>
+]]></content>
+    </entry>
 </feed>
